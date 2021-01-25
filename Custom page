@@ -1,0 +1,38 @@
+In Prestashop we can create a new page using the CMS. This can solve our needs in some point but it can be frustrating due to the limitations they have.
+For this ocassions use a module it can be unnecessary, we just want to add a new page with our CSS and/or our custom HTML in the main structure. 
+We can do it manually as you will see in the next lines:
+
+1. Create a new controller for this new page: we will name it as newPageController and it will contain:
+  <?php
+    class newPageControllerCore extends FrontController
+    {
+      public $php_self = 'newPage';
+
+      public function initContent()
+      {
+      $this->context->smarty->assign(
+        array(
+          'variableSmarty1' => 'We can have many variables as we want',
+         )
+      );
+
+      parent::initContent();
+      $this->setTemplate('newPage');
+      }
+    }
+  >
+  
+  
+2. We will have a tpl for this new page (newpage.tpl)
+  {extends file='page.tpl'}
+  {block name='page_title'}
+    <span class="sitemap-title">{l s='newPage' d='Shop.Theme'}</span>
+  {/block}
+  {block name='page_content_container'}
+     <section>
+     {$variableSmarty1}
+    </section>
+  {/block}
+  
+  Finally we add the php in /controllers/front and the tpl to /themes/yourTheme/templates
+  
