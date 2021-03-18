@@ -1,0 +1,7 @@
+[{shop_url}] 
+
+Witaj
+
+Nowe zapytanie o produkt {product} {productLink}
+{phone----------------
+{question}

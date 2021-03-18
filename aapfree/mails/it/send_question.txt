@@ -1,0 +1,7 @@
+[{shop_url}] 
+
+Hi,
+
+New inquiry about {product} {productLink}
+{phone}----------------
+{question}

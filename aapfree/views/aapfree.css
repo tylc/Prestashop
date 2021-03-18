@@ -1,0 +1,47 @@
+/**
+ * PrestaShop module created by VEKIA, a guy from official PrestaShop community ;-)
+ *
+ * @author    VEKIA https://www.prestashop.com/forums/user/132608-vekia/
+ * @copyright 2010-2020 VEKIA
+ * @license   This program is not free software and you can't resell and redistribute it
+ *
+ * CONTACT WITH DEVELOPER http://mypresta.eu
+ * support@mypresta.eu
+ */
+
+#send_AAP_form {
+    max-width: 600px;
+}
+
+#send_AAP_form .product {
+    text-align: center;
+    border-bottom: 1px solid #cecece;
+    margin-bottom: 10px;
+}
+
+#send_AAP_form .pull-right {
+    float: right;
+}
+
+#send_AAP_form #gdpr_checkbox {
+    height: auto !important;
+    width: auto !important;
+}
+
+#send_AAP_form .gdpr_disabled {
+    opacity: .5;
+    background: silver !important;
+    cursor: not-allowed !important;
+}
+
+#send_AAP_form textarea {
+    height: 260px;
+}
+
+.send_AAP_form_content_button {
+    border-top: 1px solid #cecece;
+    padding-top:20px;
+    margin-top:20px;
+    display:block;
+    clear:both;
+}
